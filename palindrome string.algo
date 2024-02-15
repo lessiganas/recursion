@@ -1,0 +1,49 @@
+//  Define a function to check if a string is a palindrome
+FUNCTION palindrome(str:string) : BOOLEAN
+VAR
+  i,j :INTEGER;
+BEGIN
+  // Compare the first and the last characters of the string  
+   i = 0 ;
+    // Index of the first character
+  j = len(string) - 1 ;
+  // Index of the last character
+   while i < j/2;
+    //  Loop until the middle of the string
+    if string[i] != string[j];
+      // If the characters are not equal
+      return False;
+      //  The string is not a palindrome
+    i += 1 ; //Move to the next character from the left
+    j -= 1 ; //Move to the next character from the right
+  return True;
+  // The string is a palindrome
+  
+END
+  
+ 
+  
+ALGORITHM is-palindome
+
+VAR
+  chaine :STRING;
+  a:BOOLEAN;
+  
+ 
+
+BEGIN
+  
+ a:= palindrome(chaine);
+ IF (a==true) THEN
+  write("la chaine est palindrome")
+ ELSE
+  write("la chaine est une chaine non  palindrome")
+  
+ END_IF
+
+
+ END
+  
+    
+    
+  
